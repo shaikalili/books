@@ -1,0 +1,17 @@
+<div class="row">
+  <button mat-raised-button color="primary" (click)="openDialog()">new book</button>
+    <div class="col-xs-10" 
+    *ngFor="let book of books; let i=index">
+        <a style="cursor: pointer;" class="list-group-item clearfix" >
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{book.name}}</h4>
+                <p class="list-group-item-text">{{book.price}}</p>
+                <button mat-Stroked-button color="accent" (click)="openEditDialog(i)">edit book</button>
+            </div>
+            <span class="pull-right">
+                <img src="{{book.imagePath}}"
+                alt="" class="img-responsive" style="max-height: 50px;">             
+            </span>
+        </a>
+    </div>
+</div>

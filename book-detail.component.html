@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img [src]="book.imagePath" alt="" class="img-responsive" style="max-height: 250px;">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{book.name}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+       {{book.description}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" (click)="onAddToCart()">add to cart
+                </button>
+
+        </div>
+    </div>
+</div>
+
